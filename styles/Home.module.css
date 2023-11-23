@@ -1,0 +1,205 @@
+
+.container {
+
+background-color: #EFF6FF;
+
+height: 100%;
+
+width: 100%;
+
+}
+
+.main {
+
+display: flex;
+
+flex-direction: column;
+
+height: 100%;
+
+width: 100%;
+
+justify-content: center;
+
+text-align: center;
+
+align-items: center;
+
+}
+
+.jobSearchBox {
+	width: 500px;
+	height: 300px;
+	border-radius: 1rem;
+	border: none;
+	background-color: white;
+	margin: 10px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	z-index: 2;
+	border-color: #0066FF; /* Initial border color */
+	box-shadow: 10px 8px 15px 0px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added transitions */
+  }
+  
+  .jobSearchBox:hover {
+	transform: translateY(-5px);
+	border-color: #0066FF; /* Change to the color you desire */
+	box-shadow: 10px 11px 17px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+.jobDetails{
+
+    width: 420px;
+    height: 280px;
+    border-radius: 1rem;
+    border: 2px solid black;
+    background-color: white;
+    /* margin: 8px; */
+    color: black;
+    /* margin-bottom: 100px; */
+    z-index: 2;
+    border-color: #0066FF;
+    box-shadow: 10px 8px 15px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.jobDetails:hover {
+	transform: translateY(-5px);
+	border-color: #0066FF; /* Change to the color you desire */
+	box-shadow: 10px 11px 17px 0px rgba(0, 0, 0, 0.3);
+  }
+  .jobSection {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #0066FF;
+  }
+  
+  .jobSection::before,
+  .jobSection::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	 /* Adjust gradient colors */
+	z-index: 1;
+  }
+  
+  .jobSection::before {
+	top: -50px; /* Adjust position for top shape */
+	clip-path: polygon(0% 100%, 100% 50%, 100% 100%, 0% 100%);
+	background: linear-gradient(45deg, #0066FF, #ffffff);
+  }
+  
+  .jobSection::after {
+	bottom: -50px; /* Adjust position for bottom shape */
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+	background: linear-gradient(45deg, #0066FF, #ffffff);
+  }
+  
+
+  
+
+.error {
+
+font-weight: 900;
+
+color: red;
+
+z-index: 1;
+
+}
+
+.select {
+	width: auto;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	padding: 8px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    border-radius: 2rem;
+    background: #0066FF;
+    border: none;
+	box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.selectContainer{
+	background: #EFF6FF;
+    width: auto;
+    padding-left: 10px;
+	border: 1px solid #EFF6FF;
+    border-radius: 2rem;
+    border: 1px solid #dadada;
+	text-align: center;
+    justify-content: right;
+    align-items: center;
+    align-content: center;
+    display: flex;
+	gap: 5px;
+	font-weight: bold;
+    color: #adadad;
+	box-shadow: inset 1px 4px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.highlight{
+	color: #0066FF;
+}
+
+.searchBtn{
+	width: 165px;
+	padding: 8px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    border-radius: 2rem;
+    background: #0066FF;
+    border: none;
+	margin-top: 15px;
+	box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.3);
+	transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.searchBtn:hover{
+	background: #EFF6FF;
+	color: #0066FF;
+	box-shadow: inset 1px 4px 6px 0px rgba(0, 0, 0, 0.3);;
+}
+.dropDown {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.skillBox{
+	border-radius: 2rem;
+    color: black;
+    font-weight: bold;
+    font-size: small;
+    width: 80px;
+    height: auto;
+    background-color: #e4efff;
+    /* padding: 2px; */
+    border: none;
+}
+.skillBoxContainer{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
