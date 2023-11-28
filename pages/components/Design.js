@@ -84,7 +84,7 @@ export default function Design(){
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 1 },
+                        value: { min: 1, max: 4 },
                     },
                 },
                 detectRetina: true,

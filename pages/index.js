@@ -1,11 +1,15 @@
 import Head from 'next/head';
+
 import styles from '../styles/Home.module.css';
 import { useState, useEffect } from 'react';
 
 import Script from 'next/script';
 import Design from './components/Design';
+import KarigoriJobDatabase from './KarigoriJobDatabase.js';
 
 export default function Home() {
+
+
   const [categories, setCategories] = useState([]);
   const [positions, setPositions] = useState([]);
   const [locations, setLocations] = useState([]);
@@ -125,7 +129,7 @@ export default function Home() {
 		<Design />
         {/* Display job details */}
         <div className={styles.jobSection}>
-		<div>
+		<div className={styles.innerjobsec}>
             {jobDetails.length > 0 ? (
               jobDetails.map((job, index) => (
                 <div key={index} className={styles.jobDetails}>
@@ -152,6 +156,8 @@ export default function Home() {
 
         </div>
       </div>
+
+	  <KarigoriJobDatabase/>
     </div>
   );
 }
