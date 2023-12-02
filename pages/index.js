@@ -3,7 +3,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { useState, useEffect } from 'react';
 
-import Script from 'next/script';
+
 import Design from './components/Design';
 import KarigoriJobDatabase from './KarigoriJobDatabase.js';
 
